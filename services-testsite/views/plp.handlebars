@@ -1,0 +1,23 @@
+<div class="container">
+	<h1>Shop our Products</h1>
+	{{#each products}}
+	<div class="product-thumbnail">
+		<img src="{{image}}">
+		<a href="{{url}}">
+			<h3>{{name}}</h3>
+		</a>
+	</div>
+	{{/each}}
+</div>
+
+
+<style>
+.product-thumbnail {
+	display: inline-block;
+	max-width: 300px;
+	text-align: center
+}
+.product-thumbnail img {
+	max-width: 300px;
+}
+</style>
